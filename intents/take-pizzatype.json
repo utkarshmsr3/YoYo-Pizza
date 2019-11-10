@@ -1,0 +1,150 @@
+{
+  "id": "254aabde-6e97-4e39-a6cf-786eb0ccee85",
+  "parentId": "7d9f4814-1e25-4cca-8be2-d9e92fa45230",
+  "rootParentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "name": "take-pizzatype",
+  "auto": true,
+  "contexts": [
+    "new-order-custom-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "new-order-custom.new-order-custom-custom",
+      "affectedContexts": [
+        {
+          "name": "take-pizzatype-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "7ca17c7f-088c-4343-91e9-da9726edb203",
+          "required": true,
+          "dataType": "@pizzatype",
+          "name": "pizzatype",
+          "value": "$pizzatype",
+          "prompts": [
+            "Enter pizza type. Veg or Non-veg ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "95d910cb-0ca4-4d00-a425-e3055a483805",
+      "data": [
+        {
+          "text": "this time ",
+          "userDefined": false
+        },
+        {
+          "text": "non-veg",
+          "alias": "pizzatype",
+          "meta": "@pizzatype",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "08fb6363-5c49-405e-bcb6-7e98026e4dff",
+      "data": [
+        {
+          "text": "this time ",
+          "userDefined": false
+        },
+        {
+          "text": "veg",
+          "alias": "pizzatype",
+          "meta": "@pizzatype",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "70197cef-0aab-40e5-8749-74753e92d5f7",
+      "data": [
+        {
+          "text": "non-veg",
+          "alias": "pizzatype",
+          "meta": "@pizzatype",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b7a75266-aca8-4b49-9fcf-22fc9b2899b0",
+      "data": [
+        {
+          "text": "veg",
+          "alias": "pizzatype",
+          "meta": "@pizzatype",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "b19c785c-c82b-497f-a38d-dad95ed29f2f",
+      "data": [
+        {
+          "text": "I want to order ",
+          "userDefined": false
+        },
+        {
+          "text": "non-veg",
+          "alias": "pizzatype",
+          "meta": "@pizzatype",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

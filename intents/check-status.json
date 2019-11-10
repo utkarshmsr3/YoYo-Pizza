@@ -1,0 +1,281 @@
+{
+  "id": "bda7bfb2-1716-440f-94de-f3bac58a59ed",
+  "name": "check-status",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4c8eabcf-2da5-49e4-beca-2f5303d382a3",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "orderid",
+          "value": "$orderid",
+          "prompts": [
+            "Please enter the order id, you want to check status of."
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "0eecec0d-f100-4736-b5b6-e9ab79a84f82",
+      "data": [
+        {
+          "text": "get status",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "913c2cef-03b2-4f8f-9658-ec82e9bb860d",
+      "data": [
+        {
+          "text": "status check",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2288e572-f629-4daa-a1c5-9bb093018749",
+      "data": [
+        {
+          "text": "check status",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "28053981-6084-406c-a145-b64be15854a8",
+      "data": [
+        {
+          "text": "check status of ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "508c1c5e-d31a-43da-918a-ac9b85b9952b",
+      "data": [
+        {
+          "text": "get ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " status",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4bc218c6-4f85-4d73-b52d-c676deb7b6c8",
+      "data": [
+        {
+          "text": "check ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "03220e99-77fb-4398-b748-1779e22e0f3d",
+      "data": [
+        {
+          "text": "status check of existing order with order-id ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "65251839-5cf4-4043-856d-1175ad6a513f",
+      "data": [
+        {
+          "text": "status check ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8a018800-7e01-4d29-99ff-a8d700b87fb8",
+      "data": [
+        {
+          "text": "status ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "65f092d4-6f15-491f-bfdf-606901cf4b2f",
+      "data": [
+        {
+          "text": "check ",
+          "userDefined": false
+        },
+        {
+          "text": "124",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5cc0f997-9cf2-4503-b7a1-452066f9deb1",
+      "data": [
+        {
+          "text": "status",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4aa64dcd-9242-49a4-9c72-ae8d29d7e516",
+      "data": [
+        {
+          "text": "check ",
+          "userDefined": false
+        },
+        {
+          "text": "order status",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " of ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

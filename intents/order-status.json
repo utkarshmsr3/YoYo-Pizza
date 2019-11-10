@@ -1,0 +1,117 @@
+{
+  "id": "7971c459-dd49-4b86-a4e8-6afe68f58a8f",
+  "parentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "rootParentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "name": "order-status",
+  "auto": true,
+  "contexts": [
+    "input_type",
+    "DefaultWelcomeIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom",
+      "affectedContexts": [
+        {
+          "name": "order-status-custom-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "c52cba50-d405-4591-a196-06a10d75f279",
+          "required": false,
+          "dataType": "@type",
+          "name": "type",
+          "value": "$type",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": [
+            "May I know the order-id",
+            "Please enter the order-id to track status"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "084bdbd9-194d-4128-8967-f82074d4f8d2",
+      "data": [
+        {
+          "text": "check status",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        },
+        {
+          "text": " of existing order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d27847c8-10b1-468d-86b9-8dbe86ec0836",
+      "data": [
+        {
+          "text": "check status",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c5e4351d-ba58-4e38-a3ee-0d582fd38941",
+      "data": [
+        {
+          "text": "Check ",
+          "userDefined": false
+        },
+        {
+          "text": "order status",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "92ffc867-8090-4f49-8424-685d73de7f10",
+  "name": "size",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "regular",
+      "synonyms": [
+        "regular",
+        "small"
+      ]
+    },
+    {
+      "value": "medium",
+      "synonyms": [
+        "medium",
+        "normal"
+      ]
+    },
+    {
+      "value": "large",
+      "synonyms": [
+        "large"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}

@@ -1,0 +1,30 @@
+{
+  "id": "940407e4-3181-4f29-9c1f-4f998c4ed04b",
+  "name": "type",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "order-new",
+      "synonyms": [
+        "new order",
+        "place a new order",
+        "order fresh",
+        "place an order",
+        "place a new one",
+        "order new"
+      ]
+    },
+    {
+      "value": "order-status",
+      "synonyms": [
+        "check status",
+        "order status",
+        "check status of the order"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}

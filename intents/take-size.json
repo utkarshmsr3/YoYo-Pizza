@@ -1,0 +1,135 @@
+{
+  "id": "edbfff83-ac8c-4561-b59b-d5a2803ebf55",
+  "parentId": "bff0774e-ef34-4ba7-8b58-d57e4f374949",
+  "rootParentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "name": "take-size",
+  "auto": true,
+  "contexts": [
+    "take-pizzaname-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "new-order-custom.new-order-custom-custom.take-pizzatype-custom.take-pizzaname-custom",
+      "affectedContexts": [
+        {
+          "name": "take-size-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "dcbd8f24-eb4d-4d8b-b55c-59e48bf1d095",
+          "required": true,
+          "dataType": "@size",
+          "name": "size",
+          "value": "$size",
+          "prompts": [
+            "Please mention the size of the pizza"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "How many of such pizza you want ?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d793fd1e-81fa-45a6-b469-35c198ce28d0",
+      "data": [
+        {
+          "text": "regular",
+          "alias": "size",
+          "meta": "@size",
+          "userDefined": false
+        },
+        {
+          "text": " size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "44d3b0b9-55ce-4ea4-a241-0d59a9bcb2b0",
+      "data": [
+        {
+          "text": "Please make it ",
+          "userDefined": false
+        },
+        {
+          "text": "regular",
+          "alias": "size",
+          "meta": "@size",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a784a30a-ac72-4a2b-8b9e-16606507fdad",
+      "data": [
+        {
+          "text": "regular",
+          "alias": "size",
+          "meta": "@size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "fbf1e948-6b93-4f08-8f48-ccc28a9dc58a",
+      "data": [
+        {
+          "text": "make it ",
+          "userDefined": false
+        },
+        {
+          "text": "regular",
+          "alias": "size",
+          "meta": "@size",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

@@ -1,0 +1,215 @@
+{
+  "id": "7d9f4814-1e25-4cca-8be2-d9e92fa45230",
+  "parentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "rootParentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "name": "new-order",
+  "auto": true,
+  "contexts": [
+    "input_type",
+    "DefaultWelcomeIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "new-order-custom-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "16c0ca0f-7e4c-4693-9afb-8a05b2f91a76",
+          "required": false,
+          "dataType": "@type",
+          "name": "type",
+          "value": "$type",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": [
+            "Do you want to order a Veg or Non-Veg ?",
+            "Veg or Non-veg ?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "ffe096d2-6576-43b3-9f8e-2f1e6ff3f80b",
+      "data": [
+        {
+          "text": "fresh order",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c284c2aa-1eca-45c7-91ba-9e4224c64f01",
+      "data": [
+        {
+          "text": "order a fresh",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "61f7e134-7765-4c38-b050-7ea5621c5dba",
+      "data": [
+        {
+          "text": "order new",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "cff010a5-69cf-46e2-85ef-a11c16b12d52",
+      "data": [
+        {
+          "text": "new order",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "336d4ad5-0291-4df3-bdd7-731ec4738259",
+      "data": [
+        {
+          "text": "place a new one",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "01945c0e-e11f-446d-b292-c472a98466a5",
+      "data": [
+        {
+          "text": "place a new order",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "62335ac0-83d7-4afb-b9a8-9d35c18f0112",
+      "data": [
+        {
+          "text": "I'd like to place a ",
+          "userDefined": false
+        },
+        {
+          "text": "new order",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e8552e9c-3d32-4858-85a5-e7276ae20325",
+      "data": [
+        {
+          "text": "a ",
+          "userDefined": false
+        },
+        {
+          "text": "new order",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d303ae3a-4b5e-4f0f-87f8-403af0572bd0",
+      "data": [
+        {
+          "text": "place a order",
+          "alias": "type",
+          "meta": "@type",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

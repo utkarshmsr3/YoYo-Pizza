@@ -1,0 +1,30 @@
+{
+  "dbinfo" : {
+    "neworderid" : 1235
+  },
+  "orders" : {
+    "1234" : {
+      "address" : "Sector-A, Youngistan, Bhopal",
+      "count" : 1,
+      "name" : "Tarun Bhatia",
+      "phoneno" : 9677751444,
+      "pizzaname" : "Cloud 9",
+      "size" : "Regular",
+      "status" : "Delivered",
+      "totalCost" : 120,
+      "type" : "veg"
+    }
+  },
+  "pizza" : {
+    "non-veg" : {
+      "Cheese and Pepperoni" : 140,
+      "Chiken Dominator" : 200,
+      "Non-veg supreme" : 160
+    },
+    "veg" : {
+      "Chef's Veg Wonders" : 150,
+      "Cloud 9" : 120,
+      "Veg Extravaganza" : 100
+    }
+  }
+}

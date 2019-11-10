@@ -1,0 +1,288 @@
+{
+  "id": "a15a71b7-1807-4918-b284-61e58ff07cb3",
+  "name": "take-all",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5dfacc25-6e81-4c35-a8fd-9991e9d444ee",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phone-number",
+          "value": "$phone-number",
+          "prompts": [
+            "Please enter your phone number"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "c7b7c04b-3942-4b75-8bed-291883f7b307",
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "Please enter the delivery address"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "9a6fdc6e-a715-41cf-b370-6440260a7df8",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            "The order should be placed in the name of ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "2b4266bc-96ff-4d10-983c-b618f29e77a0",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "count",
+          "value": "$count",
+          "prompts": [
+            "How many of pizza you want to order ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "fa9b4f46-e411-4eed-a832-3a9b94d9d7d3",
+          "required": true,
+          "dataType": "@pizzatype",
+          "name": "pizzatype",
+          "value": "$pizzatype",
+          "prompts": [
+            "What is the pizza type ? Veg or Non-veg ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "80a1b041-8e43-40ee-9478-c8ad18f23507",
+          "required": true,
+          "dataType": "@sys.unit-information-name",
+          "name": "pizzaname",
+          "value": "$pizzaname",
+          "prompts": [
+            "Which pizza do you want to order ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "5f2a0019-fa30-4ea6-a4da-fdff878a721c",
+      "data": [
+        {
+          "text": "I want to order  ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "alias": "count",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "veg",
+          "alias": "pizzatype",
+          "meta": "@pizzatype",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "extravaganza",
+          "alias": "pizzaname",
+          "meta": "@sys.unit-information-name",
+          "userDefined": true
+        },
+        {
+          "text": " to ",
+          "userDefined": false
+        },
+        {
+          "text": "Sector-A, Youngistan, Bhopal",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": true
+        },
+        {
+          "text": ", in the name of ",
+          "userDefined": false
+        },
+        {
+          "text": "Tarun Bhatia",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3ac54781-3103-427e-9974-132292db06a8",
+      "data": [
+        {
+          "text": "I wish to order ",
+          "userDefined": false
+        },
+        {
+          "text": "one",
+          "alias": "count",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "veg",
+          "alias": "pizzatype",
+          "meta": "@pizzatype",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "extravaganza",
+          "alias": "pizzaname",
+          "meta": "@sys.unit-information-name",
+          "userDefined": true
+        },
+        {
+          "text": " to ",
+          "userDefined": false
+        },
+        {
+          "text": "Sector-A, Youngistan, Bhopal",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": true
+        },
+        {
+          "text": ", in the name of ",
+          "userDefined": false
+        },
+        {
+          "text": "Tarun Bhatia",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5678ff4f-eab5-4b0d-bb64-62302e1e1b1e",
+      "data": [
+        {
+          "text": "My name is ",
+          "userDefined": false
+        },
+        {
+          "text": "Tarun Bhatia",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", Contact me at ",
+          "userDefined": false
+        },
+        {
+          "text": "9678999910",
+          "alias": "phone-number",
+          "meta": "@sys.phone-number",
+          "userDefined": false
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "Sector-A, Youngistan, Bhopal",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": true
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

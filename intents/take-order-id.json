@@ -1,0 +1,87 @@
+{
+  "id": "80223bc9-f710-47f8-b971-38fb27f87fa6",
+  "parentId": "7971c459-dd49-4b86-a4e8-6afe68f58a8f",
+  "rootParentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "name": "take-order-id",
+  "auto": true,
+  "contexts": [
+    "order-status-custom-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "58acc7b6-ca42-49a4-969b-0c25f3e88cb8",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "name": "orderid",
+          "value": "$orderid",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "44a69813-4365-4324-aaa9-12394abe72dd",
+      "data": [
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number-integer",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "44ce238a-6ae2-41ba-8cc8-7be0ae579cec",
+      "data": [
+        {
+          "text": "My order-id is ",
+          "userDefined": false
+        },
+        {
+          "text": "1234",
+          "alias": "orderid",
+          "meta": "@sys.number-integer",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

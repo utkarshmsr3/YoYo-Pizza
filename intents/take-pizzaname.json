@@ -1,0 +1,169 @@
+{
+  "id": "bff0774e-ef34-4ba7-8b58-d57e4f374949",
+  "parentId": "254aabde-6e97-4e39-a6cf-786eb0ccee85",
+  "rootParentId": "d229cb45-fc88-4f5e-b338-0d31bb315fac",
+  "name": "take-pizzaname",
+  "auto": true,
+  "contexts": [
+    "take-pizzatype-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "new-order-custom.new-order-custom-custom.take-pizzatype-custom",
+      "affectedContexts": [
+        {
+          "name": "take-pizzaname-followup",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "49161454-205d-4f46-88a0-b23adc87f408",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "pizzaname",
+          "value": "$pizzaname",
+          "prompts": [
+            "Please enter the pizza name"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "Please tell the size. Regular, Medium or Large ?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "679e936f-4969-4ea1-8f1b-9dd3bb1e4982",
+      "data": [
+        {
+          "text": "cloud 9",
+          "alias": "pizzaname",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " please",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d2583414-6a61-4f1d-9421-eea7ee212fb6",
+      "data": [
+        {
+          "text": "Make it ",
+          "userDefined": false
+        },
+        {
+          "text": "Veg Extravaganza",
+          "alias": "pizzaname",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5a127149-3a46-4611-b807-8adbbe018eed",
+      "data": [
+        {
+          "text": "Cloud 9",
+          "alias": "pizzaname",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a88a8292-c5ef-438f-958f-3bf80202ce5f",
+      "data": [
+        {
+          "text": "I 'd wish to order ",
+          "userDefined": false
+        },
+        {
+          "text": "veg extravaganza",
+          "alias": "pizzaname",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0d5d1d02-3f4f-429e-8c7e-36821589a1d1",
+      "data": [
+        {
+          "text": "Veg Extravaganza",
+          "alias": "pizzaname",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ad4f6833-5fa6-4d2b-a3e9-2894b7b183f8",
+      "data": [
+        {
+          "text": "I want to order ",
+          "userDefined": false
+        },
+        {
+          "text": "Veg Extravaganza",
+          "alias": "pizzaname",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

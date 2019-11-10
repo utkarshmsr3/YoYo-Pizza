@@ -1,0 +1,164 @@
+{
+  "id": "c37aad79-0935-4148-b6fd-7dd24daf1500",
+  "name": "take-user-info",
+  "auto": true,
+  "contexts": [
+    "agree-confirmation-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "agree-confirmation-followup",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "aac0623d-6274-4cba-b2af-26b2a83faec5",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            "Order should be in the name of ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "cbe7c4fc-30a5-4d6b-a803-5f859bb97f11",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phoneno",
+          "value": "$phoneno",
+          "prompts": [
+            "What is your contact no. ?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "03e1fb6d-4c20-45fb-8929-86585ba7b11e",
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "Please mention the delivery address"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "6e510e56-e96e-41ec-b323-65c8593f308c",
+      "data": [
+        {
+          "text": "my name is ",
+          "userDefined": false
+        },
+        {
+          "text": "Tarun Bhatia",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", Contact ",
+          "userDefined": false
+        },
+        {
+          "text": "9678999910",
+          "alias": "phoneno",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        },
+        {
+          "text": ", and address ",
+          "userDefined": false
+        },
+        {
+          "text": "sector-A, youngistan, Bhopal",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "47d07108-1fd8-48f2-8f8f-f9f0310c553c",
+      "data": [
+        {
+          "text": "Tarun Bhatia",
+          "alias": "name",
+          "meta": "@sys.given-name",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "9678999910",
+          "alias": "phoneno",
+          "meta": "@sys.phone-number",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "sector-a, youngistan, Bhopal",
+          "alias": "address",
+          "meta": "@sys.address",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

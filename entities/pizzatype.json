@@ -1,0 +1,27 @@
+{
+  "id": "6a7833bc-47a4-4a2e-a9d8-b22aa30c0218",
+  "name": "pizzatype",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "veg",
+      "synonyms": [
+        "veg",
+        "vegitarian",
+        "vegetarian"
+      ]
+    },
+    {
+      "value": "non-veg",
+      "synonyms": [
+        "non-veg",
+        "non-vegetarian",
+        "non-vegitarian"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}

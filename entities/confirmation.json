@@ -1,0 +1,39 @@
+{
+  "id": "a5a3fa6a-898a-49ea-9124-e83fa8314b9c",
+  "name": "confirmation",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "yes",
+      "synonyms": [
+        "yes",
+        "yeah",
+        "okay",
+        "ok",
+        "yep",
+        "ya"
+      ]
+    },
+    {
+      "value": "no",
+      "synonyms": [
+        "no",
+        "no wait",
+        "nah",
+        "nope",
+        "sorry don't"
+      ]
+    },
+    {
+      "value": "cancel",
+      "synonyms": [
+        "cancel",
+        "terminate"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}
